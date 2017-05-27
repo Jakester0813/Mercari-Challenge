@@ -10,4 +10,6 @@ public class Response {
         this.result = result;
         this.data = data;
     }
+
+
 }
