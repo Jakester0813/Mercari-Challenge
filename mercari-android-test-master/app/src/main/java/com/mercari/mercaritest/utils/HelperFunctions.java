@@ -1,6 +1,7 @@
 package com.mercari.mercaritest.utils;
 
 import android.app.Activity;
+import android.content.Context;
 
 import com.mercari.mercaritest.data.model.HomeResponse;
 
@@ -24,10 +25,10 @@ public class HelperFunctions {
         return instance;
     }
 
-    public String getStringFromDataJSON(Activity activity){
+    public String getStringFromDataJSON(Context context){
         String json = null;
         try {
-            InputStream is = activity.getAssets().open("all.json");
+            InputStream is = context.getAssets().open("all.json");
             int size = is.available();
             byte[] buffer = new byte[size];
             is.read(buffer);
