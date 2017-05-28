@@ -14,8 +14,6 @@
         card_view:cardUseCompatPadding="true"
         card_view:cardCornerRadius="8dp">
 
-
-
         <ImageView
             android:id="@+id/iv_item_image"
             android:layout_width="match_parent"
@@ -27,6 +25,7 @@
             android:layout_height="50dip"
             android:src="@mipmap/sold"
             android:layout_gravity="top|end"
+            android:paddingRight="1dp"
             android:visibility="gone"/>
 
         <TextView

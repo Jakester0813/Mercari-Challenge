@@ -35,10 +35,12 @@ public class ItemAdapter extends RecyclerView.Adapter<RecyclerViewHolders>{
         return rcv;
     }
 
+    //Gets the item based on current position, and gets all of the data ready for display
     @Override
     public void onBindViewHolder(RecyclerViewHolders holder, int position) {
         Item item = itemList.get(position);
         StringBuilder price = new StringBuilder(MercariConstants.DOLLAR);
+        //Displays sold if the status is sold out
         if(item.status.equals(MercariConstants.SOLD_OUT)) {
             holder.soldImage.setVisibility(View.VISIBLE);
         }
